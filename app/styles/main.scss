@@ -11,48 +11,9 @@ $button-width: 35px;
 
 body {
 
-  font-family: 'Maven Pro', sans-serif;
+ font-family: 'Questrial', sans-serif;
   background-color: #D1EEEE;
 }
-header {
-
-  height: 70px;
-  background-color: hsla(0,0%,0%,0.3) !important;
-  position:fixed;
-  width: 100%;
-
-
-h1 {
-  display: inline;
-  padding-top: 10px;
-  padding-left: 10px;
-  color: #ffffff;
-}
-}
- .overlay ul {
-  float: right;
-  margin: -30px auto;
-
-  vertical-align: middle;
- }
-.overlay li{
-  display:inline;
-  right: 20px;
-}
-.overlay a {
-  color: #ffffff; 
-  text-decoration: none;
-  padding: 10px;
-  font-size: 24px;
-
-  &:hover {
-    color:$color-main;
-  }
-}
-
-
-@media screen and (max-width:900px) {
-
 #container {
 
   width: 100%;
@@ -60,20 +21,7 @@ h1 {
   text-align: center;
   margin:  0 auto;
 
-
-  
- section {
-
-
-  h1{
-     padding-top: 10px;
-  padding-left: 10px;
-  color: #ffffff;
-  }
-
- }
-
-
+ 
 }
 
 .imageBreaks {
@@ -97,6 +45,7 @@ header {
   position: fixed;
   margin: 0;
   z-index: 1;
+  background-color: hsla(0,0%,0%,0.5);
 
 
 
@@ -112,9 +61,9 @@ header {
 
 .button_container {
   position: fixed;
-  top: 4%;
+  // top: 4%;
   right: 2%;
-
+    top: 29px;
   height: $button-height;
   width: $button-width;
   cursor: pointer;
@@ -139,6 +88,7 @@ header {
       transform: translateY(-11px) translateX(0) rotate(-45deg);
       background: $color-active;
     }
+
   }
   
   span {
@@ -246,6 +196,12 @@ header {
     }
   }
 }
+ h1{
+     padding-top: 10px;
+  padding-left: 10px;
+  color: hsla(350,56%,92%,1);
+
+  }
 
 @keyframes fadeInRight {
   0% {
@@ -281,4 +237,4 @@ header {
 
 }
 
-}
+
