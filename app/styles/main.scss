@@ -5,8 +5,8 @@ $color-link: #FFF;
 $button-height: 27px;
 $button-width: 35px;
 body {
-    font-family: 'Questrial', sans-serif;
-    background-color: #D1EEEE;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #7e99bc;
 }
 hr {
   margin: 0;
@@ -33,6 +33,7 @@ header {
     width: 100%;
     height: 70px;
     position: fixed;
+display:none;
     margin: 0;
     z-index: 1;
     background-color: hsla(0, 0%, 0%, 0.8);
@@ -48,7 +49,7 @@ header {
     position: fixed;
     // top: 4%;
     right: 2%;
-    top: 20px;
+    top: 35px;
     height: $button-height;
     width: $button-width;
     cursor: pointer;
@@ -60,22 +61,22 @@ header {
     &.active {
         .top {
             transform: translateY(11px) translateX(0) rotate(45deg);
-            background: $color-active;
+            background: #ffffff;
 
         }
         .middle {
             opacity: 0;
-            background: $color-active;
+            background: #ffffff;
 
         }
         .bottom {
             transform: translateY(-11px) translateX(0) rotate(-45deg);
-            background: $color-active;
+            background: #ffffff;
 
         }
     }
     span {
-        background: $color-main;
+        background: #e6e6e6;
         border: none;
         height: 5px;
         width: 100%;
@@ -95,7 +96,7 @@ header {
 
 .overlay {
     position: fixed;
-    background: $color-main;
+    background: #7e99bc;
     top: 0;
     left: 0;
     width: 100%;
@@ -153,10 +154,10 @@ header {
             cursor: pointer;
             a {
                 display: block;
-                 text-shadow: 1px 1px #1e1e1e;
+                 text-shadow: 1px 1px #e6624c;
                 width: 100%;
                 position: relative;
-                color: $color-link;
+                color: #e6e6e6;
                 text-decoration: none;
                 overflow: hidden;
                 cursor: pointer;
@@ -169,10 +170,21 @@ header {
     }
 }
 
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
 h1 {
 
     padding-left: 10px;
-    color: hsla(350, 56%, 92%, 1);
+    text-shadow: 1px 1px #e6624c;
+    color: #ffffff;
+    span {
+        text-shadow: 1px 1px #000000;
+    color: #e6624c;
+    }
 }
 
 @keyframes fadeInRight {
@@ -186,38 +198,82 @@ h1 {
     }
 }
 
-.headerImg {
+.head {
     width: 100%;
-    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.4);
+    height: 90%;
+   
+
+   .image {
+    img {
+    margin: 100px auto 15px auto;
+        width:40%;  
+        min-width:250px;
+    }
+   }
+
+   h2 {
+    color: #ffffff;
+    font-size: 2em;
+    font-style: italic;
+
+   }
+   .logo {
+    img{
+        width: 250px;
+    }
+   }
+   .date {
+
+    h3 {
+        color: #ffffff;
+        font-size: 1.8em;
+
+
+    }
+    h4{
+        color: #ffffff;
+        margin-bottom: 100px;
+        font-size: 1.3em;
+        font-style: italic;
+    }
+   }
 }
 
 section {
     width: 100%;
     height: 90%;
-}
+    text-align: center;
 
-#home {
-  background-color: #D1EEEE;
-background-image: linear-gradient(transparent 30%, rgba(255,255,255,.5) 50%);
-background-size: 50px 50px;
-    margin: 0;
-    padding-top: 35px;
-    padding-bottom: 35px;
-        box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.4);
+    h2 {
+        color: #e6624c;
+        font-size: 2.6em;
+        margin-top: 35px;
+        text-shadow: 1px 1px hsla(214,32%,62%,1);
 
-    .home {
-        width: 80%;
-        margin: 0 auto;
-        text-align: left;
-        p {
-            font-size: 1.2em;
-        }
-        ul li {
-            font-size: 1.2em;
-            margin-bottom: 6px;
-        }
     }
 }
+
+// #home {
+//   background-color: #ffffff;
+
+//     margin: 0;
+//     padding-top: 35px;
+//     padding-bottom: 35px;
+//         box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.4);
+
+//     .home {
+//         width: 80%;
+//         margin: 0 auto;
+//         text-align: left;
+//         p {
+//             font-size: 1.2em;
+//         }
+//         ul li {
+//             font-size: 1.2em;
+//             margin-bottom: 6px;
+//         }
+//     }
+// }
 
 #about {
     margin: 0;
@@ -227,28 +283,50 @@ background-size: 50px 50px;
     .about {
         width: 80%;
         margin: 0 auto;
-        text-align: left;
+        // text-align: left;
     }
     p {
         font-size: 1.2em;
+    }
+
+    .signup {
+        a {
+            color: #e6624c; 
+            font-size: 1.6em; 
+            text-decoration: underline;
+
+            &:hover {
+                color: #7e99bc;
+            }
+        }
     }
 }
 
 #prizes {
  
- background-color: #D1EEEE;
-background-image: linear-gradient(transparent 30%, rgba(255,255,255,.5) 50%);
-background-size: 50px 50px;
+ // background-color: #ffffff;
+
     margin: 0;
     padding-top: 35px;
-    padding-bottom: 35px;
+    margin-bottom: 80px;
     .prizes {
         width: 80%;
         margin: 0 auto;
-        text-align: left;
+    h3 {
+        font-size: 1.9em;
+        text-transform: uppercase;
+        color: #e6624c;
+         text-shadow: 0.5px 0.5px #fff;
+    }
+    h2{
+         text-shadow: 0.5px 0.5px #fff;
+    }
     }
     p {
-        font-size: 1.2em;
+        font-size: 1em;
+        font-style: italic;
+        margin: 0;
+        color: #ffffff;
     }
 }
 
@@ -257,20 +335,32 @@ background-size: 50px 50px;
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: #ffffff;
+
     .schedule {
         width: 80%;
         margin: 0 auto;
-        text-align: left;
-    }
+      
+     
+      h3 {
+        color:#e6624c;
+        font-size:1.6em; 
+
+      }
+    
     p {
         font-size: 1.2em;
     }
+    .row {
+        .col-md-4{
+        p{
+            font-style: 1.8em;
+        }
+    }
+    }}
 }
 
 #signup {
-   background-color: #D1EEEE;
-background-image: linear-gradient(transparent 30%, rgba(255,255,255,.5) 50%);
-background-size: 50px 50px;
+   
     margin: 0;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -292,9 +382,23 @@ background-size: 50px 50px;
     .contact {
         width: 80%;
         margin: 0 auto;
-        text-align: left;
+
     }
     p {
         font-size: 1.2em;
+    }
+    a {
+        text-decoration: none;
+        color: #e6624c;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    i{
+        padding: 5px;
+    }
+    i:hover {
+        color: black;
     }
 }
