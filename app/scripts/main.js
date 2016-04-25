@@ -14,7 +14,7 @@ var scroll_pos = 0;
                     	'transition': '1s ease',
                     	'background-color': '#7e99bc',
                     	'border-bottom': '.5px ridge #ffffff',
-                    	'height': '70px',
+                    	// 'height': '70px',
 
                     });
                     $("header img").css({
