@@ -175,6 +175,19 @@ header {
         
     }
 
+    h2 {
+        color: #000000;
+        display: inline-block;
+        background-color: transparent;
+        text-align: left;
+        width: 80%;
+        position: absolute;
+        font-size: 4vw;
+        margin-top: 16%;
+        left: 3%;
+        text-shadow: none;
+    }
+
 
 .navigation {
  width: 100%;
@@ -191,11 +204,15 @@ header {
         font-size: 2vw;
 
         background-color: #86b312;
+
+
         a{
         color: #ffffff;
         text-shadow: 1px 1px hsla(194,65%,61%,1);
 
-
+         &:hover {
+            opacity: 0.8;
+        }
         }
     }
 
@@ -204,6 +221,9 @@ header {
 
 
 } 
+
+
+
 p {
     padding-top:20px;
     font-size: 1.6vw;
